@@ -59,8 +59,8 @@
 
   /* hero */
   .hero{position:relative;overflow:hidden;background:
-      radial-gradient(120% 90% at 78% 18%, rgba(245,166,35,.20), transparent 60%),
-      linear-gradient(115deg,#241c17 0%, #2c2118 48%, #3a2a1d 100%);color:#FBF4EC}
+      linear-gradient(105deg, rgba(18,13,9,.90) 0%, rgba(28,20,14,.72) 44%, rgba(45,33,22,.46) 100%),
+      url('assets/hero.jpg') center 26%/cover no-repeat;color:#FBF4EC}
   .hero .wrap{position:relative;z-index:2;padding:96px 22px 84px;max-width:var(--maxw)}
   .hero .photo-note{position:absolute;inset:0;z-index:1;display:grid;place-items:end start;opacity:.5}
   .hero .photo-note span{font-family:var(--text);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#d8c6b4;padding:14px 18px}
@@ -92,6 +92,8 @@
   .welcome blockquote{max-width:21ch;max-width:760px}
   .welcome .big{font-size:clamp(23px,3.3vw,35px);font-weight:600;line-height:1.34;color:var(--ink)}
   .welcome .big b{color:var(--orange-deep);font-weight:700}
+  .welcome .wrap{display:grid;grid-template-columns:1.25fr .85fr;gap:46px;align-items:center}
+  .welcome .wimg{height:390px;border-radius:18px;background-size:cover;background-position:center;box-shadow:0 18px 40px rgba(31,36,33,.16)}
 
   /* program cards */
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
@@ -103,6 +105,7 @@
   .pcard h3{font-size:25px;margin:16px 0 8px}
   .pcard p{color:var(--meta);font-size:16px;flex:1}
   .pcard .go{margin-top:18px;font-weight:700;color:var(--orange-deep)}
+  .pcard .pphoto{margin:-28px -28px 20px;height:172px;background-size:cover;background-position:center;border-radius:16px 16px 0 0}
 
   /* get started band */
   .start{background:linear-gradient(120deg,var(--orange) 0%, var(--orange-deep) 100%);color:#fff}
@@ -197,6 +200,8 @@
   @media (max-width:900px){
     .cards,.steps,.coachgrid,.glist,.price-row,.qgrid,.schedule .grid,footer .cols{grid-template-columns:1fr 1fr}
     .price-row{grid-template-columns:1fr}
+    .welcome .wrap{grid-template-columns:1fr;gap:26px}
+    .welcome .wimg{height:240px;order:-1}
   }
   @media (max-width:680px){
     nav.links{display:none}
@@ -241,7 +246,7 @@
 
 <!-- HERO -->
 <section class="hero" style="padding:0">
-  <div class="photo-note" aria-hidden="true"><span>Photo: members of every age, mid-laugh, together at the box</span></div>
+  <div class="photo-note" aria-hidden="true"><span>Stock placeholder &middot; replace with a real photo of the Drop Box community</span></div>
   <div class="wrap">
     <p class="eyebrow">Town Center &middot; Virginia Beach</p>
     <h1>Your friendly neighborhood <em>CrossFit</em> gym.</h1>
@@ -267,8 +272,11 @@
 <!-- WELCOME -->
 <section class="welcome">
   <div class="wrap reveal">
-    <p class="eyebrow" style="color:var(--orange-deep)">Start where you are</p>
-    <p class="big" style="margin-top:14px">You don't have to be fit to start. <b>That's the whole point.</b> Drop Box CrossFit is built for real people of every age and every fitness level, and every workout is coached and scaled to where you are today, not where someone else is. We've been the friendly neighborhood box in Town Center for over a decade, and the thing people tell us most is that they came for the workout and stayed for the people.</p>
+    <div class="wcopy">
+      <p class="eyebrow" style="color:var(--orange-deep)">Start where you are</p>
+      <p class="big" style="margin-top:14px">You don't have to be fit to start. <b>That's the whole point.</b> Drop Box CrossFit is built for real people of every age and every fitness level, and every workout is coached and scaled to where you are today, not where someone else is. We've been the friendly neighborhood box in Town Center for over a decade, and the thing people tell us most is that they came for the workout and stayed for the people.</p>
+    </div>
+    <div class="wimg" role="img" aria-label="Two members talking and laughing at the gym" style="background-image:url('assets/community.jpg')"></div>
   </div>
 </section>
 
@@ -282,18 +290,21 @@
     </div>
     <div class="cards">
       <div class="pcard reveal">
+        <div class="pphoto" role="img" aria-label="A coach teaching a new member one on one" style="background-image:url('assets/card1.jpg')"></div>
         <span class="tag">NEW TO CROSSFIT</span>
         <h3>Fundamentals</h3>
         <p>Never touched a barbell? Start here. We'll teach you the movements at your pace before you ever step into a class.</p>
         <a class="go" href="#start">Start here &rarr;</a>
       </div>
       <div class="pcard ink reveal">
+        <div class="pphoto" role="img" aria-label="A group class doing box jumps together" style="background-image:url('assets/card2.jpg')"></div>
         <span class="tag">EVERYDAY</span>
         <h3>Group CrossFit</h3>
         <p>Coached group classes, every workout scalable. Show up, we handle the rest. You'll know your name by week one.</p>
         <a class="go" href="#schedule">See the schedule &rarr;</a>
       </div>
       <div class="pcard teal reveal">
+        <div class="pphoto" role="img" aria-label="An older member staying strong with a dumbbell" style="background-image:url('assets/card3.jpg')"></div>
         <span class="tag">STRONG FOR LIFE</span>
         <h3>Masters 55+ &amp; Open Gym</h3>
         <p>Functional fitness built for staying strong as you age, scaled right, plus open-gym time on your own schedule.</p>
