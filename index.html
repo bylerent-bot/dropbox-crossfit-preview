@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CrossFit Gym in Town Center, Virginia Beach | Drop Box CrossFit</title>
+<meta name="description" content="Friendly neighborhood CrossFit for all ages and all levels in Town Center, Virginia Beach. Coaching that meets you where you're at. Book your first visit today.">
+<!-- PRIVATE PREVIEW COMP. noindex on purpose. Design reference for the Squarespace rebuild. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange:#F25C2A; --orange-deep:#D6471A; --gold:#F5A623;
+    --paper:#FAF7F2; --card:#FFFFFF; --ink:#1F2421; --meta:#6E6A63;
+    --line:#E8E2D8; --teal:#2E9E8F;
+    --display:'Anton', Impact, 'Arial Narrow Bold', sans-serif;
+    --text:'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--text);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.display{font-family:var(--display);font-weight:400;text-transform:uppercase;line-height:.98;letter-spacing:.01em}
+  a{color:var(--orange-deep);text-decoration:none}
+  a:hover{text-decoration:underline}
+  img{max-width:100%;display:block}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;z-index:200}
+  .skip:focus{left:8px;top:8px}
+
+  /* preview bar */
+  .preview{background:var(--ink);color:#F3ECE1;font-size:12.5px;letter-spacing:.03em;text-align:center;padding:7px 14px}
+  .preview b{color:var(--gold)}
+
+  /* buttons */
+  .btn{display:inline-block;font-family:var(--text);font-weight:700;font-size:15px;letter-spacing:.02em;
+    background:var(--orange);color:#fff;border:none;border-radius:10px;padding:15px 26px;cursor:pointer;
+    transition:transform .2s ease, background .2s ease, box-shadow .2s ease;box-shadow:0 6px 18px rgba(242,92,42,.28)}
+  .btn:hover{background:var(--orange-deep);transform:translateY(-2px);box-shadow:0 10px 26px rgba(242,92,42,.36);text-decoration:none}
+  .btn.ghost{background:transparent;color:var(--ink);box-shadow:none;border:2px solid var(--ink);padding:13px 24px}
+  .btn.ghost:hover{background:var(--ink);color:#fff}
+  .btn.lg{font-size:17px;padding:18px 34px}
+  .btn.white{background:#fff;color:var(--orange-deep);box-shadow:0 8px 22px rgba(0,0,0,.18)}
+  .btn.white:hover{background:#fff;color:var(--ink)}
+
+  /* header */
+  header.site{position:sticky;top:0;z-index:100;background:rgba(250,247,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:18px;padding:14px 22px;max-width:var(--maxw);margin:0 auto}
+  .logo{font-family:var(--display);font-size:23px;letter-spacing:.02em;color:var(--ink);display:flex;align-items:center;gap:9px}
+  .logo .mk{display:inline-grid;place-items:center;width:34px;height:34px;background:var(--ink);border-radius:9px;color:var(--orange);font-size:18px}
+  .logo .mk span{transform:translateY(1px)}
+  nav.links{margin-left:auto;display:flex;gap:20px;align-items:center}
+  nav.links a{color:var(--ink);font-weight:600;font-size:14.5px;letter-spacing:.01em}
+  nav.links a:hover{color:var(--orange-deep);text-decoration:none}
+  .nav .btn{padding:11px 18px;font-size:14px}
+  .menu-btn{display:none;margin-left:auto;background:none;border:1.5px solid var(--ink);border-radius:8px;padding:9px 12px;font-weight:700;cursor:pointer}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;background:
+      radial-gradient(120% 90% at 78% 18%, rgba(245,166,35,.20), transparent 60%),
+      linear-gradient(115deg,#241c17 0%, #2c2118 48%, #3a2a1d 100%);color:#FBF4EC}
+  .hero .wrap{position:relative;z-index:2;padding:96px 22px 84px;max-width:var(--maxw)}
+  .hero .photo-note{position:absolute;inset:0;z-index:1;display:grid;place-items:end start;opacity:.5}
+  .hero .photo-note span{font-family:var(--text);font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:#d8c6b4;padding:14px 18px}
+  .hero:before{content:"";position:absolute;inset:0;z-index:1;background:
+      repeating-linear-gradient(135deg, rgba(255,255,255,.025) 0 2px, transparent 2px 22px)}
+  .eyebrow{font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:12.5px;color:var(--gold)}
+  .hero h1{font-size:clamp(40px,6.4vw,82px);max-width:14ch;margin:14px 0 0;color:#fff}
+  .hero h1 em{font-style:normal;color:var(--orange)}
+  .hero p.sub{font-size:clamp(17px,2.1vw,21px);max-width:46ch;margin:20px 0 30px;color:#EADfceff;line-height:1.5;color:#ECE0D2}
+  .hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .hero .seetimes{color:#F3E7D7;font-weight:600;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:2px}
+  .hero .seetimes:hover{color:#fff;text-decoration:none;border-color:#fff}
+
+  /* trust strip */
+  .trust{background:var(--ink);color:#EFE7DB}
+  .trust .wrap{display:flex;flex-wrap:wrap;gap:10px 30px;justify-content:center;padding:16px 22px;font-size:14px;font-weight:500;text-align:center}
+  .trust .dot{color:var(--orange)}
+
+  /* sections */
+  section{padding:78px 0}
+  .sec-head{max-width:62ch}
+  .sec-head .eyebrow{color:var(--orange-deep)}
+  h2{font-size:clamp(30px,4.4vw,50px);margin:10px 0 0}
+  .lead{font-size:19px;color:var(--meta);margin-top:14px;max-width:60ch}
+
+  /* welcome quote */
+  .welcome{background:var(--paper)}
+  .welcome blockquote{font-family:var(--text);font-weight:500;font-size:clamp(22px,3.2vw,34px);line-height:1.36;max-width:24ch+}
+  .welcome blockquote{max-width:21ch;max-width:760px}
+  .welcome .big{font-size:clamp(23px,3.3vw,35px);font-weight:600;line-height:1.34;color:var(--ink)}
+  .welcome .big b{color:var(--orange-deep);font-weight:700}
+
+  /* program cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;display:flex;flex-direction:column;transition:transform .2s ease, box-shadow .2s ease}
+  .pcard:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(31,36,33,.10)}
+  .pcard .tag{font-family:var(--display);font-size:13px;letter-spacing:.04em;color:#fff;background:var(--orange);align-self:flex-start;padding:5px 11px;border-radius:6px}
+  .pcard.teal .tag{background:var(--teal)}
+  .pcard.ink .tag{background:var(--ink)}
+  .pcard h3{font-size:25px;margin:16px 0 8px}
+  .pcard p{color:var(--meta);font-size:16px;flex:1}
+  .pcard .go{margin-top:18px;font-weight:700;color:var(--orange-deep)}
+
+  /* get started band */
+  .start{background:linear-gradient(120deg,var(--orange) 0%, var(--orange-deep) 100%);color:#fff}
+  .start h2{color:#fff}
+  .start .eyebrow{color:#FCE3CF}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:38px}
+  .step{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:26px}
+  .step .n{font-family:var(--display);font-size:40px;line-height:1;color:#FFD9C3}
+  .step h3{font-size:20px;margin:10px 0 8px;color:#fff}
+  .step p{color:#FCE9DD;font-size:15.5px}
+  .start .cta-row{margin-top:36px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .start .fineprint{color:#FCE3CF;font-size:14px;margin-top:14px}
+
+  /* coaches */
+  .coachgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:38px}
+  .coach{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .coach .ph{aspect-ratio:1/1;background:linear-gradient(150deg,#efe2d4,#e3d2bf);display:grid;place-items:center;color:#b6a境;color:#b09a82;position:relative}
+  .coach .ph svg{width:42px;height:42px;opacity:.65}
+  .coach .ph .ini{position:absolute;font-family:var(--display);font-size:30px;color:#fff;opacity:.9;text-shadow:0 1px 2px rgba(0,0,0,.15)}
+  .coach .body{padding:14px 16px 18px}
+  .coach .body .nm{font-family:var(--display);font-size:18px}
+  .coach .body .ce{color:var(--orange-deep);font-weight:700;font-size:12.5px;letter-spacing:.04em;margin-top:3px}
+  .coach .body .hk{color:var(--meta);font-size:13.5px;margin-top:6px}
+
+  /* guides / content hub */
+  .guides{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .glist{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
+  .guide{display:flex;gap:16px;align-items:flex-start;padding:20px;border:1px solid var(--line);border-radius:13px;background:var(--paper);transition:border-color .2s ease, transform .2s ease}
+  .guide:hover{border-color:var(--orange);transform:translateY(-2px)}
+  .guide .ic{flex:0 0 44px;height:44px;border-radius:10px;background:#FCEBDF;display:grid;place-items:center;color:var(--orange-deep)}
+  .guide h3{font-family:var(--text);font-weight:700;text-transform:none;font-size:17.5px;letter-spacing:0;line-height:1.25}
+  .guide p{color:var(--meta);font-size:14px;margin-top:4px}
+
+  /* schedule snapshot */
+  .schedule .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+  .scol{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .scol h3{font-size:19px}
+  .scol .t{display:flex;justify-content:space-between;border-top:1px dashed var(--line);padding:9px 0;font-size:15px}
+  .scol .t:first-of-type{border-top:none}
+  .scol .t span:last-child{color:var(--meta);font-variant-numeric:tabular-nums}
+
+  /* pricing */
+  .pricing{background:var(--paper)}
+  .price-row{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:20px;margin-top:36px}
+  .plan{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;position:relative}
+  .plan.feature{border:2px solid var(--orange);box-shadow:0 14px 34px rgba(242,92,42,.12)}
+  .plan .pin{position:absolute;top:-13px;left:24px;background:var(--orange);color:#fff;font-family:var(--display);font-size:12px;letter-spacing:.05em;padding:5px 12px;border-radius:6px}
+  .plan h3{font-size:22px}
+  .plan .amt{font-family:var(--display);font-size:46px;color:var(--ink);margin:8px 0 2px}
+  .plan .amt small{font-family:var(--text);font-size:15px;font-weight:600;color:var(--meta)}
+  .plan ul{list-style:none;margin:14px 0 0;color:var(--meta);font-size:15px}
+  .plan li{padding:6px 0 6px 24px;position:relative}
+  .plan li:before{content:"";position:absolute;left:0;top:12px;width:12px;height:12px;border-radius:3px;background:var(--gold)}
+  .pricing .note{margin-top:18px;color:var(--meta);font-size:14px}
+
+  /* community / reviews */
+  .community{background:var(--ink);color:#EFE7DB}
+  .community h2{color:#fff}
+  .community .eyebrow{color:var(--gold)}
+  .qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:38px}
+  .q{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:24px}
+  .q .stars{color:var(--gold);letter-spacing:3px;font-size:15px}
+  .q p{margin:12px 0 16px;font-size:16.5px;line-height:1.5;color:#F1E9DE}
+  .q .who{font-weight:700;font-size:14px}
+  .q .who span{display:block;color:#B7AB9C;font-weight:400;font-size:13px;margin-top:2px}
+
+  /* final cta */
+  .final{background:
+      radial-gradient(100% 120% at 20% 0%, rgba(245,166,35,.16), transparent 55%),
+      linear-gradient(120deg,#241c17,#33261b);color:#fff;text-align:center}
+  .final h2{color:#fff;font-size:clamp(32px,5vw,58px);max-width:18ch;margin:0 auto}
+  .final p{color:#ECE0D2;font-size:19px;max-width:48ch;margin:18px auto 30px}
+
+  /* footer */
+  footer.site{background:#15110d;color:#C9BEAF;font-size:14.5px;padding:54px 0 30px}
+  footer .cols{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}
+  footer .logo{color:#fff;margin-bottom:12px}
+  footer h4{font-family:var(--display);font-size:15px;letter-spacing:.06em;color:#fff;margin-bottom:12px}
+  footer a{color:#C9BEAF}
+  footer a:hover{color:#fff}
+  footer .nap p{margin:3px 0}
+  footer .legal{border-top:1px solid #2a231b;margin-top:34px;padding-top:18px;color:#8a8073;font-size:12.5px;display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+
+  /* sticky mobile cta */
+  .mobile-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:120;padding:11px 16px;background:rgba(250,247,242,.96);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+  .mobile-cta .btn{display:block;text-align:center;width:100%}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:900px){
+    .cards,.steps,.coachgrid,.glist,.price-row,.qgrid,.schedule .grid,footer .cols{grid-template-columns:1fr 1fr}
+    .price-row{grid-template-columns:1fr}
+  }
+  @media (max-width:680px){
+    nav.links{display:none}
+    .menu-btn{display:block}
+    nav.links.open{display:flex;position:absolute;top:62px;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--line);padding:16px 22px;gap:14px}
+    nav.links.open .btn{display:none}
+    .cards,.steps,.coachgrid,.glist,.qgrid,.schedule .grid,footer .cols{grid-template-columns:1fr}
+    section{padding:56px 0}
+    .hero .wrap{padding:64px 22px 60px}
+    .mobile-cta{display:block}
+    body{padding-bottom:64px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none;transition:none}
+    .btn,.pcard,.guide{transition:none}
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="preview">PRIVATE PREVIEW &middot; design comp for the Squarespace rebuild. Photos are placeholders; <b>offer, schedule, pricing, ratings, and roster are samples pending Art's confirmation.</b></div>
+
+<header class="site">
+  <div class="nav">
+    <a class="logo" href="#top" aria-label="Drop Box CrossFit home"><span class="mk"><span>&#9633;</span></span> DROP BOX CROSSFIT</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="links" id="primary-nav" aria-label="Primary">
+      <a href="#programs">Classes</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#coaches">Coaches</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#guides">Free Guides</a>
+      <a class="btn" href="#start">Book Your First Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<a id="top"></a>
+
+<!-- HERO -->
+<section class="hero" style="padding:0">
+  <div class="photo-note" aria-hidden="true"><span>Photo: members of every age, mid-laugh, together at the box</span></div>
+  <div class="wrap">
+    <p class="eyebrow">Town Center &middot; Virginia Beach</p>
+    <h1>Your friendly neighborhood <em>CrossFit</em> gym.</h1>
+    <p class="sub">All ages, all levels, coached to where you're at. Functional fitness in a community that actually feels like one.</p>
+    <div class="cta-row">
+      <a class="btn lg" href="#start">Book Your First Visit</a>
+      <a class="seetimes" href="#schedule">See class times</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <span>A CrossFit affiliate for over a decade in Town Center</span>
+    <span class="dot">&bull;</span>
+    <span>Coaches who scale every workout to you</span>
+    <span class="dot">&bull;</span>
+    <span>FUN and family friendly</span>
+  </div>
+</div>
+
+<!-- WELCOME -->
+<section class="welcome">
+  <div class="wrap reveal">
+    <p class="eyebrow" style="color:var(--orange-deep)">Start where you are</p>
+    <p class="big" style="margin-top:14px">You don't have to be fit to start. <b>That's the whole point.</b> Drop Box CrossFit is built for real people of every age and every fitness level, and every workout is coached and scaled to where you are today, not where someone else is. We've been the friendly neighborhood box in Town Center for over a decade, and the thing people tell us most is that they came for the workout and stayed for the people.</p>
+  </div>
+</section>
+
+<!-- PROGRAMS -->
+<section id="programs">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Find your starting line</p>
+      <h2>Three ways in. All of them coached.</h2>
+      <p class="lead">Pick the one that sounds like you. Not sure? Start with the first one and we'll take it from there.</p>
+    </div>
+    <div class="cards">
+      <div class="pcard reveal">
+        <span class="tag">NEW TO CROSSFIT</span>
+        <h3>Fundamentals</h3>
+        <p>Never touched a barbell? Start here. We'll teach you the movements at your pace before you ever step into a class.</p>
+        <a class="go" href="#start">Start here &rarr;</a>
+      </div>
+      <div class="pcard ink reveal">
+        <span class="tag">EVERYDAY</span>
+        <h3>Group CrossFit</h3>
+        <p>Coached group classes, every workout scalable. Show up, we handle the rest. You'll know your name by week one.</p>
+        <a class="go" href="#schedule">See the schedule &rarr;</a>
+      </div>
+      <div class="pcard teal reveal">
+        <span class="tag">STRONG FOR LIFE</span>
+        <h3>Masters 55+ &amp; Open Gym</h3>
+        <p>Functional fitness built for staying strong as you age, scaled right, plus open-gym time on your own schedule.</p>
+        <a class="go" href="#start">Learn more &rarr;</a>
+        <p style="font-size:12px;color:var(--meta);margin-top:10px">[sample &mdash; confirm Masters 55+ track with Art]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GET STARTED -->
+<section class="start" id="start">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Your first visit, made easy</p>
+      <h2>No experience needed. No pressure.</h2>
+      <p class="lead" style="color:#FCE9DD">Just come meet us, tell us your goals, and we'll show you how it works.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">1</div><h3>Book a time</h3><p>Pick a slot that works for you. Takes about a minute.</p></div>
+      <div class="step reveal"><div class="n">2</div><h3>Meet a coach</h3><p>We'll talk through your goals and walk you around the gym. About 30 minutes.</p></div>
+      <div class="step reveal"><div class="n">3</div><h3>Start at your pace</h3><p>We map your on-ramp into classes, scaled to exactly where you are today.</p></div>
+    </div>
+    <div class="cta-row">
+      <a class="btn lg white" href="#">Book Your First Visit</a>
+      <span class="fineprint">[sample button &mdash; final label is "Free Intro" or "First Visit" once Art picks the offer. Booking embeds here via Wodify.]</span>
+    </div>
+  </div>
+</section>
+
+<!-- COACHES -->
+<section id="coaches">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">The people in your corner</p>
+      <h2>Coached by your neighbors.</h2>
+      <p class="lead">Our coaches are nurses, a paramedic, teachers, military, and a Naval Academy grad. Real people from this community who scale every workout to you.</p>
+    </div>
+    <div class="coachgrid">
+      <div class="coach reveal"><div class="ph"><span class="ini">AC</span></div><div class="body"><div class="nm">Art Chevalier</div><div class="ce">OWNER &middot; CF-L2</div><div class="hk">Coaching this community for over a decade.</div></div></div>
+      <div class="coach reveal"><div class="ph"><span class="ini">AP</span></div><div class="body"><div class="nm">April Pearce</div><div class="ce">HEAD COACH &middot; CF-L2</div><div class="hk">Runs the floor, knows every name.</div></div></div>
+      <div class="coach reveal"><div class="ph"><span class="ini">MM</span></div><div class="body"><div class="nm">Michael McMahon</div><div class="ce">CF-L1</div><div class="hk">Paramedic. Calm under any barbell.</div></div></div>
+      <div class="coach reveal"><div class="ph"><span class="ini">TQ</span></div><div class="body"><div class="nm">Tom Quinn</div><div class="ce">CF-L1</div><div class="hk">Adaptive trainer. Everyone scales.</div></div></div>
+      <div class="coach reveal"><div class="ph"><span class="ini">JP</span></div><div class="body"><div class="nm">Julie Paler</div><div class="ce">CF-L1 &middot; RN</div><div class="hk">Nurse by day, coach by dawn.</div></div></div>
+      <div class="coach reveal"><div class="ph"><span class="ini">BA</span></div><div class="body"><div class="nm">Brianna Abbott</div><div class="ce">CF-L2</div><div class="hk">Kids and nutrition.</div></div></div>
+      <div class="coach reveal"><div class="ph"><span class="ini">KT</span></div><div class="body"><div class="nm">Kimberly Thurber</div><div class="ce">CF-L1</div><div class="hk">Gymnastics and endurance.</div></div></div>
+      <div class="coach reveal"><div class="ph"><span class="ini">JC</span></div><div class="body"><div class="nm">JC Collins</div><div class="ce">CF-L1</div><div class="hk">Brings the energy, every class.</div></div></div>
+    </div>
+    <p style="font-size:13px;color:var(--meta);margin-top:18px">[sample roster from the current site &mdash; confirm the live coaching staff with Art before publishing names. Real member portraits replace the placeholders.]</p>
+  </div>
+</section>
+
+<!-- GUIDES / CONTENT HUB -->
+<section class="guides" id="guides">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Free, no sign-up needed</p>
+      <h2>New to this? We wrote you a map.</h2>
+      <p class="lead">Honest answers to the questions everyone has before their first class. Read them whether you join us or not. That's the point.</p>
+    </div>
+    <div class="glist">
+      <a class="guide reveal" href="#"><span class="ic" aria-hidden="true">&#10003;</span><div><h3>Is CrossFit Safe? An Honest Answer.</h3><p>The real research on injury rates, and how good coaching keeps you healthy.</p></div></a>
+      <a class="guide reveal" href="#"><span class="ic" aria-hidden="true">&#9654;</span><div><h3>Your First Class: Exactly What to Expect.</h3><p>Walk through the door, the warm-up, the scaling, the coach. Nerves gone.</p></div></a>
+      <a class="guide reveal" href="#"><span class="ic" aria-hidden="true">&#8505;</span><div><h3>What Is a WOD? A Plain-English Glossary.</h3><p>WOD, AMRAP, EMOM, scaling. The jargon, demystified in five minutes.</p></div></a>
+      <a class="guide reveal" href="#"><span class="ic" aria-hidden="true">&#9889;</span><div><h3>CrossFit Over 55: Built for You.</h3><p>Why functional fitness is exactly what your body wants as you age.</p></div></a>
+      <a class="guide reveal" href="#"><span class="ic" aria-hidden="true">&#9733;</span><div><h3>Beginner's Guide to Starting CrossFit in Virginia Beach.</h3><p>Your local on-ramp, from first visit to first month.</p></div></a>
+      <a class="guide reveal" href="#"><span class="ic" aria-hidden="true">&#10010;</span><div><h3>How Much Exercise Do You Actually Need?</h3><p>What the guidelines really say, and how a few classes a week gets you there.</p></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE SNAPSHOT -->
+<section id="schedule">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Class times</p>
+      <h2>There's a slot that fits your day.</h2>
+      <p class="lead">A quick look at the week. Book any class right from the schedule page.</p>
+    </div>
+    <div class="grid">
+      <div class="scol reveal"><h3>Weekday Mornings</h3>
+        <div class="t"><span>Mon &ndash; Fri</span><span>5:30 &ndash; 6:30 AM</span></div>
+        <div class="t"><span>Coached CrossFit</span><span>All levels</span></div>
+      </div>
+      <div class="scol reveal"><h3>Weekday Afternoons</h3>
+        <div class="t"><span>Mon &ndash; Fri</span><span>3:30 &ndash; 6:30 PM</span></div>
+        <div class="t"><span>Coached CrossFit</span><span>All levels</span></div>
+      </div>
+      <div class="scol reveal"><h3>Weekends &amp; Open Gym</h3>
+        <div class="t"><span>Sat &ndash; Sun</span><span>9:00 &ndash; 10:30 AM</span></div>
+        <div class="t"><span>Open gym</span><span>Members</span></div>
+      </div>
+    </div>
+    <p style="font-size:13px;color:var(--meta);margin-top:18px">[sample times from the current site &mdash; the live Wodify schedule embeds here and replaces the broken schedule page. Confirm current times with Art.]</p>
+    <div style="margin-top:24px"><a class="btn" href="#start">Book a class</a></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Simple membership</p>
+      <h2>One gym. One fair price.</h2>
+      <p class="lead">No contracts buried in fine print. Start with Fundamentals, then train as much as you want.</p>
+    </div>
+    <div class="price-row">
+      <div class="plan feature reveal">
+        <span class="pin">MOST POPULAR</span>
+        <h3>Unlimited</h3>
+        <div class="amt">$150<small>/mo</small></div>
+        <ul>
+          <li>Every coached class, every day</li>
+          <li>Open gym access</li>
+          <li>Programming and coaching included</li>
+          <li>Month to month, no long contract</li>
+        </ul>
+        <div style="margin-top:20px"><a class="btn" href="#start">Get Started</a></div>
+      </div>
+      <div class="plan reveal">
+        <h3>Heroes &amp; Helpers</h3>
+        <div class="amt">$130<small>/mo</small></div>
+        <ul>
+          <li>Military and first responders</li>
+          <li>Nurses and educators</li>
+          <li>Same unlimited access</li>
+          <li>Just bring your ID</li>
+        </ul>
+        <div style="margin-top:20px"><a class="btn ghost" href="#start">Get Started</a></div>
+      </div>
+      <div class="plan reveal">
+        <h3>Start Here</h3>
+        <div class="amt">Fundamentals</div>
+        <ul>
+          <li>Your on-ramp into CrossFit</li>
+          <li>Learn the movements, coached 1-on-1 or small group</li>
+          <li>Rolls right into your membership</li>
+          <li>Family add-on available</li>
+        </ul>
+        <div style="margin-top:20px"><a class="btn ghost" href="#start">Book Your First Visit</a></div>
+      </div>
+    </div>
+    <p class="note">[sample pricing from the current public site &mdash; confirm current tiers and numbers with Art before publishing.]</p>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="community">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Why people stay</p>
+      <h2>Came for the workout. Stayed for the people.</h2>
+    </div>
+    <div class="qgrid">
+      <div class="q reveal">
+        <div class="stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"I hadn't worked out in years and was terrified. By my second week the coaches knew my name and exactly how to scale everything. I've never felt out of place here."</p>
+        <div class="who">[Member name] <span>Member since [year] &middot; pending consent</span></div>
+      </div>
+      <div class="q reveal">
+        <div class="stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Played sports my whole life and nothing has kept me as strong as this. The programming is no joke and the people make you want to show up."</p>
+        <div class="who">[Member name] <span>Member since [year] &middot; pending consent</span></div>
+      </div>
+      <div class="q reveal">
+        <div class="stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"I'm in my 60s and I'm doing things I never thought I would again. They meet you exactly where you are. This place changed my year."</p>
+        <div class="who">[Member name] <span>Member since [year] &middot; pending consent</span></div>
+      </div>
+    </div>
+    <p style="font-size:13px;color:#B7AB9C;margin-top:18px">[sample testimonials illustrating the verified review themes &mdash; replace with real, named, consented member quotes. No star rating is published until it is read live off Google.]</p>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap reveal">
+    <h2>Come see what a real CrossFit community feels like.</h2>
+    <p>Book your first visit and we'll take it from there. No experience, no pressure, no catch.</p>
+    <a class="btn lg white" href="#start">Book Your First Visit</a>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <div class="logo" style="font-size:21px"><span class="mk" style="width:30px;height:30px;font-size:15px"><span>&#9633;</span></span> DROP BOX CROSSFIT</div>
+        <p style="max-width:34ch">Your friendly neighborhood CrossFit gym in Town Center, Virginia Beach. All ages, all levels, coached to where you're at.</p>
+      </div>
+      <div class="nap">
+        <h4>Visit Us</h4>
+        <p>320 Constitution Drive</p>
+        <p>Virginia Beach, VA 23462</p>
+        <p style="margin-top:8px"><a href="tel:+17573243781">(757) 324-3781</a></p>
+        <p><a href="#">info@dropboxcrossfit.com</a></p>
+        <p style="font-size:12px;color:#8a8073;margin-top:8px">[confirm canonical address, phone, email]</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <p><a href="#start">Book Your First Visit</a></p>
+        <p><a href="#programs">Classes &amp; Programs</a></p>
+        <p><a href="#coaches">Coaches</a></p>
+        <p><a href="#guides">Free Guides</a></p>
+        <p><a href="#pricing">Pricing</a></p>
+        <p style="margin-top:10px"><a href="#">Instagram</a> &middot; <a href="#">Facebook</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>&copy; <span id="yr">2026</span> Drop Box CrossFit. All rights reserved.</span>
+      <span>Design preview by Patrick &middot; for the Squarespace rebuild</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta"><a class="btn" href="#start">Book Your First Visit</a></div>
+
+<script>
+  // year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // mobile nav
+  var mb=document.querySelector('.menu-btn'), nv=document.getElementById('primary-nav');
+  mb&&mb.addEventListener('click',function(){var o=nv.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+  nv&&nv.addEventListener('click',function(e){if(e.target.tagName==='A'){nv.classList.remove('open');mb.setAttribute('aria-expanded',false)}});
+  // scroll reveal (guarded)
+  var rm=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  if('IntersectionObserver' in window && !rm){
+    var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  } else { document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')}); }
+</script>
+</body>
+</html>
